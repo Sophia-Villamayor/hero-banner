@@ -24,24 +24,30 @@ body {
 }
 
 h2 {
-  padding: 0;
+  line-height: 1.4;
   font-size: 4rem;
-  display: inline;
   color: #fff;
-  background-color: rgba(0, 0, 0, .5);
 }
 
 div {
   margin: 0;
 }
 
-.banner-title {
+.max-width {
   max-width: 50em;
-  transform: translate(-35%);
-  left: 20%;
-  position: absolute;
   width: 100%;
-  bottom: 7.2rem;
+}
+
+.banner-title {
+  width: 100%;
+  transform: translateX(-34%);
+  left: 38%;
+  position: absolute;
+  bottom: 8.1rem;
+}
+
+.banner-title span {
+  background-color: rgba(0, 0, 0, .5);
 }
 
 .banner-text {
@@ -49,6 +55,20 @@ div {
   font-size: 2rem;
   font-style: italic;
   position: absolute;
-  bottom: 0;
-  left: 2rem;
+  bottom: 1.4rem;
+  left: 1.5rem;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .banner-title {
+    bottom: 5rem;
+    padding: 0 20rem;
+  }
+
+  .banner-text {
+    padding: 0 20rem;
+    bottom: 1.5rem;
+  }
+
 }
